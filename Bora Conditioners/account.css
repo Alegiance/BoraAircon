@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Finlandica:ital@1&family=Montserrat:wght@500;600&family=Quicksand:wght@400;500;600&family=Righteous&family=Roboto:wght@300;400;500&family=Sen&family=Sofia+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+}
+.main{
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.theads{
+    background-image: linear-gradient(rgba(176, 133, 231, 0.4), rgba(176, 133, 231, 0.4)), url(borabac1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 60%;
+}
+.ads-real{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30%;
+}
+.the-form{
+    width: 40%;
+    padding: 100px 20px;
+}
+.box-form{
+    max-width: 600px;
+    background: whitesmoke;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(37, 73, 214, 0.4);
+}
+.box-form h1{
+    font-size: 2.5rem;
+    color: rgb(99, 56, 139);
+    margin-bottom: 2rem;
+    position: relative;
+}
+.input-class{
+    background: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    margin: 1.3rem 0;
+    border-radius: 4px;
+    box-shadow: 0 0 7px rgba(48, 124, 201, 0.4);
+    max-height: 60px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 14px 15px;
+}
+.input-class i{
+    margin-left: 18px;
+    color: rgb(161, 158, 163);
+}
+.group-input p{
+    font-size: 13px;
+    text-align: left;
+}
+.group-input p a{
+    text-decoration: none;
+}
+.social-media a .fa-brands{
+    width: 40px;
+    height: 40px;
+    background: rgb(227, 230, 223);
+    padding: 12px 0;
+    border-radius: 4px;
+    margin: 0 6px 14px;
+    box-shadow: 0 10 7px rgba(48, 124, 201, 0.4);
+}
+.social-media a .fa-brands:hover{
+    background: rgb(188, 192, 183);
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons button{
+    background: rgb(180, 157, 192);
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+.buttons button:hover{
+    background: rgb(182, 171, 171);
+}
+.buttons .disable{
+    background: rgb(214, 209, 209);
+}
+
+@media only screen and (max-width: 850px) {
+    .theads{
+        display: none;
+    }
+    .box-form{
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: whitesmoke;
+        text-align: center;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(37, 73, 214, 0.4);
+    }
+}
+
